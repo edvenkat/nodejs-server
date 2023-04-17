@@ -46,11 +46,11 @@ wss.on('connection', function connection(ws) {
 
 
 let port = 6969;
-// app.listen(port, function() {
-//     console.log(`Server is listening on ${port}!`)
-//   })
+app.listen(port, function() {
+    console.log(`Server is listening on ${port}!`)
+  })
 
-// port = 3000;
+port = 3000;
 server.listen(port, function() {
   console.log(`Server is listening on ${port}!`)
 })
