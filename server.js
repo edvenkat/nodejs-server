@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
-//
+
 
 const app = express();
 app.set("view engine", "ejs");
@@ -23,7 +23,7 @@ app.get("*", (req, res) => {
 
 });
 
-//
+
 // const port = 3000;
 const server = http.createServer(express);
 const wss = new WebSocket.Server({ server })
@@ -45,12 +45,12 @@ wss.on('connection', function connection(ws) {
   })
 
 
-let port = 6969;
+let port = 3000;
 app.listen(port, function() {
     console.log(`Server is listening on ${port}!`)
   })
 
-port = 3000;
+port = 6969;
 server.listen(port, function() {
   console.log(`Server is listening on ${port}!`)
 })
