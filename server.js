@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
-/*
+//
 
 const app = express();
 app.set("view engine", "ejs");
@@ -23,7 +23,7 @@ app.get("*", (req, res) => {
 
 });
 
-*/
+//
 // const port = 3000;
 const server = http.createServer(express);
 const wss = new WebSocket.Server({ server })
