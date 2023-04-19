@@ -39,7 +39,7 @@ wss.on('connection', function connection(ws) {
     //   tempRes.redirect(301,"index")
       wss.clients.forEach(function each(client) {
         if (client !== ws && client.readyState === WebSocket.OPEN) {
-          client.send(data);
+          client.send(data.toString());
         }
       })
     })
